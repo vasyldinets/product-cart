@@ -199,11 +199,13 @@ textarea {
 	right: 25px;
 	background-color: black;
 }
-#color-black:checked + .ba-color-black {
-	border: 3px solid #536dfe;
+#color-black:checked + .ba-color-black 	{
+	border: 2px solid #FFFFFF;
+    box-shadow: 0 0 5px #536dfe;
 }
 #color-grey:checked + .ba-color-grey {
-	border: 3px solid #536dfe;
+	    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 5px #536dfe;
 }
 .ba-product__add-to-cart {
 	margin-top: 40px;
