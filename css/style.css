@@ -1,4 +1,6 @@
 body{
+	font: 400 14px/1.7 'Titillium Web', Arial, sans-serif;
+	color:#263238;
 
 }
 
@@ -11,19 +13,34 @@ button{
 	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 }
-input[type="submit"],
-input[type="button"],
-button,
+
+
 .ba-button{
 	display: inline-block;
+	background-color: #536dfe;
+	border: none;
+	width: 147px;
+ 	height: 46px;
+ 	color: white;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 35px;
 }
+a:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+	opacity: .6;
 }
-
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -51,7 +68,176 @@ textarea {
 }
 
 /* Layout */
+
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	position: relative;
+	padding: 52px 60px;
+	max-width: 840px;
+	background: url(../img/fon.png) no-repeat 0 0;
+	}
+.ba-brand {
+	position: absolute;
+	top: 0;
+	left:0;
 }
+.ba-slider {
+	padding-top: 40px;
+}
+.ba-padding_more {
+	padding-left:15px;
+}
+.ba-product__model {
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	opacity: 0.9;
+	margin: 0;
+}
+.ba-product__spec{
+	float: right;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+    font-weight: 600;
+    color: #536dfe;
+}
+.ba-product__spec img {
+	padding-right: 5px;
+}
+.ba-product__title {
+	font-size: 29px;
+	margin: 0;
+	line-height: 35px;
+}
+.ba-product__title span {
+	font-size: 24px;
+}
+.ba-product__subtitle {
+	color: #646b6f;
+	font-size: 17px;
+	margin: 10px 0;
+}
+.ba-product__description{
+	line-height: 23px;
+	letter-spacing: 0.025em;
+	margin: 20px 0;
+}
+.ba-product__description a{
+	color: #536dfe;
+	text-decoration: none;
+}
+.ba-rating__stars {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  clear:both;
+  text-align: left;
+  font-size: 17px;
+  letter-spacing: 0.25em;
+  color:grey;
+}
+.ba-rating__stars > span {
+  display: inline-block;
+  position: relative;
+  width: 1.2em;
+}
+.ba-rating__stars > span:hover:before,
+.ba-rating__stars > span:hover ~ span:before {
+  color:#f1df1a;
+   content: "\2605";
+   position: absolute;
+}
+.ba-rating__value{
+	display: inline-block;
+}
+.ba-rating_score {
+	color: #f1425d;
+	font-size: 15px;
+	margin-left: 30px;
+}
+.ba-rating__reviews{
+	color: #656c6f;
+	font-size: 13px;
+}
+.ba-rating__reviews:before{
+	content: "(";
+}
+.ba-rating__reviews:after{
+	content: ")";
+}
+.ba-product__meta {
+	margin-top: 15px;
+}
+.ba-product__price {
+	font-size: 26px;
+	color: #f1425d;
+}
+.ba-product__overcosts{
+	font-size: 12px;
+	color: #37474f;
+	margin: 0;
+	}
+.ba-product-variation{
+	position: relative;
+}
+.ba-color-black,
+.ba-color-grey {
+	position: absolute;
+	bottom: -31px;
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	cursor: pointer;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+.ba-color-grey {
+	right: 0;
+	background-color: grey;
+}
+.ba-color-black {
+	right: 25px;
+	background-color: black;
+}
+#color-black:checked + .ba-color-black {
+	border: 3px solid #536dfe;
+}
+#color-grey:checked + .ba-color-grey {
+	border: 3px solid #536dfe;
+}
+.ba-product__add-to-cart {
+	margin-top: 40px;
+}
+.ba-product__box {
+	position: relative;
+	display: inline-block;
+	padding-right: 30px;
+	font-size: 13px;
+	color: #37474f;
+	letter-spacing: 0.005em;
+}
+.ba-product_qty-field{
+	width: 52px;
+	height: 46px;
+	border: 1px solid #bbb;
+	margin-left: 10px;
+	font-size: 18px;
+	color: #403f40;
+	text-align: center;
+}
+.ba-product__qty--up,
+.ba-product__qty--down {
+	position: absolute;
+	right: 5px;
+	border: none;
+	background: none;
+	font-size: 14px;
+	font-weight: 700;
+}
+.ba-product__qty--up {
+	top: 0;
+}
+.ba-product__qty--down {
+	bottom: 0;
+}
+
