@@ -71,7 +71,7 @@ textarea {
 
 .ba-container{
 	position: relative;
-	padding: 52px 60px;
+	padding: 52px 60px 0;
 	max-width: 840px;
 	background: url(../img/fon.png) no-repeat 0 0;
 	box-shadow: 0 10px 20px rgba(0,0,0,.5);
