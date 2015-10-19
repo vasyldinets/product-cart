@@ -206,7 +206,8 @@ textarea {
 	border: 3px solid #536dfe;
 }
 .ba-product__add-to-cart {
-	margin-top: 40px;
+	    margin: 40px 0 52px;
+    	overflow: overlay;
 }
 .ba-product__box {
 	position: relative;
