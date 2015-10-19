@@ -210,7 +210,8 @@ textarea {
     box-shadow: 0 0 5px #536dfe;
 }
 .ba-product__add-to-cart {
-	margin-top: 40px;
+	margin: 40px 0 52px;
+    	overflow: overlay;
 }
 .ba-product__box {
 	position: relative;
