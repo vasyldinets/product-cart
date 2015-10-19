@@ -128,6 +128,12 @@ textarea {
 	color: #536dfe;
 	text-decoration: none;
 }
+.ba-rating {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .ba-rating__stars {
   display: inline-block;
   unicode-bidi: bidi-override;
