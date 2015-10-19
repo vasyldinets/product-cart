@@ -48,29 +48,25 @@
 		document.getElementById('ba-rating').innerHTML = score.toFixed(2);
 		});
 	star2.on("click", function(event){
-		event.preventDefault();
-		console.log(people)
+		event.preventDefault()
 		 i = ((score*people) + 2)/(people+1);
 		score = i;
 		document.getElementById('ba-rating').innerHTML = score.toFixed(2);
 		});
 	star3.on("click", function(event){
 		event.preventDefault();
-		console.log(people)
 		 i = ((score*people) + 3)/(people+1);
 		score = i;
 		document.getElementById('ba-rating').innerHTML = score.toFixed(2);
 		});
 	star4.on("click", function(event){
 		event.preventDefault();
-		console.log(people)
 		 i = ((score*people) + 4)/(people+1);
 		score = i;
 		document.getElementById('ba-rating').innerHTML = score.toFixed(2);
 		});
 	star5.on("click", function(event){
 		event.preventDefault();
-		console.log(people)
 		 i = ((score*people) + 5)/(people+1);
 		score = i;
 		document.getElementById('ba-rating').innerHTML = score.toFixed(2);
